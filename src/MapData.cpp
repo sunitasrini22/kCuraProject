@@ -204,10 +204,10 @@ void MapData::GenerateDegreesFromChicago()
 
 
 int main(int argc, char* argv[]) {
-	if(argc < 3)
+	if(argc < 2)
 		cout<<"This is wrong"<<endl;
 	//argv[0] is the name of this executable
-	const char* inputFile = argv[2];
+	const char* inputFile = argv[1];
 	int option;
 	cout<<"Option1: Generate the [Cities By Population] and [Interstates by Cities] files"<<endl;
 	cout<<"Option2: Generate one [Degrees from Chicago] file"<<endl;
