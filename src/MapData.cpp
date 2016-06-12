@@ -205,7 +205,10 @@ void MapData::GenerateDegreesFromChicago()
 
 int main(int argc, char* argv[]) {
 	if(argc < 2)
-		cout<<"This is wrong"<<endl;
+	{
+		cout<<"Need an input filename as command line parameter"<<endl;
+		return 0;
+	}
 	//argv[0] is the name of this executable
 	const char* inputFile = argv[1];
 	int option;
